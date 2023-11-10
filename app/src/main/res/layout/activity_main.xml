@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:fontFamily="@font/titre"
+                android:textSize="50sp"
+                android:layout_marginTop="15sp"
+                android:textColor="@color/colorApp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="welcome please sign in there"
+              android:layout_alignParentBottom="true"
+                android:textSize="18sp"
+                android:textColor="@color/colorApp"
+                />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/facebook"
+        android:layout_alignParentRight="true"/>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginEnd="10sp"
+            android:padding="10sp">
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:layout_margin="10sp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:fontFamily="@font/font"
+                android:drawableEnd="@drawable/ic_pers"
+                   />
+            <EditText
+                android:fontFamily="@font/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email"
+                android:layout_margin="10sp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:drawableEnd="@drawable/ic_email"/>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="cin"
+                android:layout_margin="10sp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:fontFamily="@font/font"
+                android:drawableEnd="@drawable/ic_cin"/>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="telephone"
+                android:layout_margin="10sp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:fontFamily="@font/font"
+                android:drawableEnd="@drawable/ic_tel"/>
+
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorApp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:text="SGIN UP" />
+        <TextView
+            android:id="@+id/gotosignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Already have acount!"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:textColor="@color/colorApp"
+            />
+    </LinearLayout>
+
+</ScrollView>
