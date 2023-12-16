@@ -23,15 +23,7 @@
                 android:layout_marginTop="15sp"
                 android:textColor="@color/colorApp"
                 />
-            <TextView
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="welcome please sign in there"
-              android:layout_alignParentBottom="true"
-                android:textSize="18sp"
-                android:textColor="@color/colorApp"
-                />
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
@@ -52,7 +44,7 @@
             android:layout_marginEnd="10sp"
             android:padding="10sp">
             <EditText
-
+                android:id="@+id/fullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Full Name"
@@ -63,6 +55,7 @@
                 android:drawableEnd="@drawable/ic_pers"
                    />
             <EditText
+                android:id="@+id/email"
                 android:fontFamily="@font/font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +65,7 @@
                 android:textSize="15sp"
                 android:drawableEnd="@drawable/ic_email"/>
             <EditText
-
+                android:id="@+id/cin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="cin"
@@ -82,7 +75,7 @@
                 android:fontFamily="@font/font"
                 android:drawableEnd="@drawable/ic_cin"/>
             <EditText
-
+                android:id="@+id/tel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="telephone"
@@ -91,11 +84,21 @@
                 android:textSize="15sp"
                 android:fontFamily="@font/font"
                 android:drawableEnd="@drawable/ic_tel"/>
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Motpasse"
+                android:layout_margin="10sp"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:fontFamily="@font/font"
+                android:drawableEnd="@drawable/ic_passe"/>
 
 
         </LinearLayout>
         <Button
-
+            android:id="@+id/buttonSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/colorApp"
