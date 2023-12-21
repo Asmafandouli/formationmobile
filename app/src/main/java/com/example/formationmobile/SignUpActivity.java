@@ -8,12 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.View;
 
 import com.example.formationmobile.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MainActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     private TextView gotosignin;
     private TextView goToSignIn;
@@ -40,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_up);
         gotosignin = findViewById(R.id.gotosignin);
         gotosignin.setOnClickListener(v -> {
-            startActivity(new Intent(MainActivity.this, SignInActivity.class));
+            startActivity(new Intent(SignUpActivity.this, SignInActivity.class));
         });
 
 
@@ -73,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                         } else {
-                            Toast.makeText(MainActivity.this, "Register Failed !", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignUpActivity.this, "Register Failed !", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
                         }
                     }
@@ -93,11 +91,11 @@ public class MainActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         //send user data
                         sendUserData();
-                        Toast.makeText(MainActivity.this, "registration done please check your email", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, "registration done please check your email", Toast.LENGTH_SHORT).show();
                         firebaseAuth.signOut();
-                        startActivity( new Intent(MainActivity.this,SignInActivity.class));
+                        startActivity( new Intent(SignUpActivity.this,SignInActivity.class));
                     } else{
-                        Toast.makeText(MainActivity.this, "registration failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SignUpActivity.this, "registration failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
